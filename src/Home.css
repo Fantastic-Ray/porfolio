@@ -1,0 +1,13 @@
+body .banner {
+  background-image: url("./images/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  color: aliceblue;
+  height: 500px;
+  margin-bottom: 25px;
+}
+.bannerContent {
+  padding: 50px;
+}

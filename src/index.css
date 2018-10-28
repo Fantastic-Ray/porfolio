@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Chakra+Petch");
+body {
+  margin-top: 50px;
+  padding: 50px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Chakra Petch", sans-serif !important;
+}
+.nav-item {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+}

@@ -1,0 +1,73 @@
+#welcome {
+  visibility: hidden;
+  animation-name: welcome;
+  animation-duration: 1.5s;
+}
+@keyframes welcome {
+  0% {
+    visibility: visible;
+    color: white;
+  }
+  25% {
+    color: gray;
+  }
+  75% {
+    color: black;
+    font-size: 160px;
+    transform: translateY(250px);
+  }
+  100% {
+    color: white;
+    transform: translateY(600px);
+  }
+}
+#name {
+  visibility: hidden;
+  animation-name: name;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+}
+@keyframes name {
+  0% {
+    font-size: 40px;
+    visibility: visible;
+    color: white;
+    transform: translateX(-800px);
+    transform: translateY(200px);
+  }
+  25% {
+    color: gray;
+  }
+  50% {
+    color: black;
+    transform: translateY(200px);
+    transform: translateX(0px);
+  }
+  100% {
+    color: white;
+  }
+}
+
+#summary {
+  visibility: hidden;
+  animation-name: summary;
+  animation-delay: 3.5s;
+  animation-duration: 3s;
+}
+@keyframes summary {
+  0% {
+    font-size: 45px;
+    visibility: visible;
+    color: white;
+  }
+  25% {
+    color: black;
+  }
+  75% {
+    color: black;
+  }
+  100% {
+    font-size: 45px;
+    color: white;
+  }
+}

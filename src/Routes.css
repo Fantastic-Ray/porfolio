@@ -1,0 +1,65 @@
+.body {
+  padding-top: 50px;
+}
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.fade-leave {
+  opacity: 0;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0 linear;
+}
+
+.fade-exit {
+  opacity: 0;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0ms linear;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  right: 40px;
+  border: none; /* Remove borders */
+  outline: none !important; /* Remove outline */
+  background-color: pink;
+  color: #fff;
+  z-index: 99; /* Make sure it does not overlap */
+  border-radius: 49px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  font-size: 200%;
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+.float:hover {
+  background-color: #555;
+}
+.float:focus {
+  outline: none !important;
+}
