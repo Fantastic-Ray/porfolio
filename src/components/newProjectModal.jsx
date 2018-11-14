@@ -10,8 +10,12 @@ export default class NewProjectModal extends Component {
       gitLink: ""
     };
   }
+  handleImageChange(e) {
+    let reader = new FileReader();
+    let file = e.target.files[0];
+  }
   submitProject = () => {
-    this.setState({});
+    this.props.callbackFromParent(this.state);
   };
   handleInput = e => {
     if (e.target.name === "titleInput") {
@@ -27,7 +31,6 @@ export default class NewProjectModal extends Component {
       this.setState({ gitLink: e.target.value });
       //console.log("this.state.projectTitle", this.state.gitLink);
     }
-    this.props.callbackFromParent(this.state);
   };
   render() {
     return (

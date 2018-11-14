@@ -9,12 +9,13 @@ export default class SkillBar extends Component {
       skillSet: [
         { name: "JavaScript,", level: "100" },
         { name: "ReactJS", level: "100" },
-        { name: "HTML5", level: "75" },
+        { name: "HTML5", level: "100" },
         { name: "CSS", level: "75" },
         { name: "jQuery", level: "75" },
-        { name: "Bootstrap", level: "50" },
+        { name: "Bootstrap", level: "75" },
         { name: "Java", level: "75" },
-        { name: "Python", level: "50" }
+        { name: "Python", level: "50" },
+        { name: "SQL", level: "50" }
       ],
       newSkillName: "",
       newSkillLevel: "25",

@@ -13,7 +13,7 @@ export default class Projects extends Component {
           projectImage: TimetecImg,
           projectText:
             "A web app designed for fast information processing with JavaScript, HTML5, CSS, jQuery, PHP, Firebase(Database) and Google Spreadsheet API.",
-          webLink: "https://timetecinc.github.io",
+          webLink: "https://timetecinctool.com",
           gitLink: "https://github.com/timetecinc/timetecinc.github.io"
         },
         {
@@ -38,6 +38,8 @@ export default class Projects extends Component {
   }
   myCallback = data => {
     console.log("project data", data);
+    this.state.projects.push(data);
+    this.setState({});
   };
   render() {
     let FloatButton = (

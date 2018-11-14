@@ -34,9 +34,7 @@ export default class Welcome extends Component {
             <h2>My Name is Ruigang Gu</h2>
           </div>
           <h3 id="summary">
-            This is a react.js project. It is a profolio about myself. And I
-            hope this project can give you the information you need to know
-            about me.
+            This is a react.js project. It is a portfolio about myself.
           </h3>
         </div>
       );
