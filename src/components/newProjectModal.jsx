@@ -7,12 +7,21 @@ export default class NewProjectModal extends Component {
       projectImage: null,
       projectText: "",
       webLink: "",
-      gitLink: ""
+      gitLink: "",
+      file: "",
+      imagePreviewUrl: ""
     };
   }
   handleImageChange(e) {
     let reader = new FileReader();
     let file = e.target.files[0];
+    reader.onloadend = () => {
+      this.setState({
+        file: file,
+        projectImage: reader.result
+      });
+    };
+    reader.readAsDataURL(file);
   }
   submitProject = () => {
     this.props.callbackFromParent(this.state);
@@ -111,6 +120,7 @@ export default class NewProjectModal extends Component {
                     type="file"
                     className="form-control-file"
                     id="exampleFormControlFile1"
+                    onChange={e => this.handleImageChange(e)}
                   />
                 </div>
               </div>

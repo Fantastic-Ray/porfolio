@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import freeupLogo from "../images/freeup.gif";
-import TimetecImg from "../images/TT.png";
+import TimetecImg1 from "../images/timetec1.gif";
+import TimetecImg2 from "../images/timetec2.gif";
 import ProjectCard from "../components/Card";
 import NewProjectModal from "../components/newProjectModal";
 export default class Projects extends Component {
@@ -10,7 +11,7 @@ export default class Projects extends Component {
       projects: [
         {
           projectTitle: "Javascript Project - Management Tool",
-          projectImage: TimetecImg,
+          projectImage: TimetecImg1,
           projectText:
             "A web app designed for fast information processing with JavaScript, HTML5, CSS, jQuery, PHP, Firebase(Database) and Google Spreadsheet API.",
           webLink: "https://timetecinctool.com",
@@ -18,7 +19,7 @@ export default class Projects extends Component {
         },
         {
           projectTitle: "React Project - Management Tool",
-          projectImage: TimetecImg,
+          projectImage: TimetecImg2,
           projectText:
             "This is the react version of the Management Tool and hosted by AWS",
           webLink: "http://timetecincreact.com",

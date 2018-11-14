@@ -9,12 +9,14 @@ export default class Footer extends Component {
           <div className="row" style={{ textAlign: "center" }}>
             <div className="col-md-12">
               <div>
-                <img
-                  src={gitLogo}
-                  alt="pgyuggutvu"
-                  width="50px"
-                  style={{ margin: "30px" }}
-                />
+                <a href="https://github.com/Fantastic-Ray">
+                  <img
+                    src={gitLogo}
+                    alt="pgyuggutvu"
+                    width="50px"
+                    style={{ margin: "30px" }}
+                  />
+                </a>
                 <a href="https://www.linkedin.com/in/guruigang/">
                   <img
                     src={linkedLogo}
