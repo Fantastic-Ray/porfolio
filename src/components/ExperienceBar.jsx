@@ -1,11 +1,20 @@
 import React, { Component } from "react";
+import UCSDImage from "../images/UCSD.jpg";
+import "../flipCard.css";
 export default class ExperienceBar extends Component {
   render() {
     return (
       <div>
         <h2>Education:</h2>
-        <h4>University of California, San Diego (UCSD) 2013-2016</h4>
-        <p>Major: Comptuer Science</p>
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front" />
+            <div className="flip-card-back">
+              <h4>University of California, San Diego (UCSD) 2013-2016</h4>
+              <p>Major: Comptuer Science</p>
+            </div>
+          </div>
+        </div>
 
         <h2>Experience</h2>
         <h4>Web Developer & E-Commerce Manager</h4>

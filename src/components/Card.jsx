@@ -21,10 +21,10 @@ export default class ProjectCard extends Component {
           <div className="card-body">
             <h5 className="card-title" />
             <p className="card-text">{this.props.projectText}</p>
-            <a href={this.props.webLink} className="card-link">
+            <a href={this.props.webLink} className="card-link" target="_blank">
               Website link
             </a>
-            <a href={this.props.gitLink} className="card-link">
+            <a href={this.props.gitLink} className="card-link" target="_blank">
               Github link
             </a>
           </div>

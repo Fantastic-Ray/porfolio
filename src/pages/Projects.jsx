@@ -15,7 +15,7 @@ export default class Projects extends Component {
           projectText:
             "A web app designed for fast information processing with JavaScript, HTML5, CSS, jQuery, PHP, Firebase(Database) and Google Spreadsheet API.",
           webLink: "https://timetecinctool.com",
-          gitLink: "https://github.com/timetecinc/timetecinc.github.io"
+          gitLink: "https://github.com/Fantastic-Ray/timetecinctool"
         },
         {
           projectTitle: "React Project - Management Tool",
