@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../Welcome.css";
-import { Link } from "react-router-dom";
+
 export default class Welcome extends Component {
   constructor(props) {
     super(props);

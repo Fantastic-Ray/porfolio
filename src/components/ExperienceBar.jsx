@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import UCSDImage from "../images/UCSD.jpg";
+
 import "../flipCard.css";
 export default class ExperienceBar extends Component {
   render() {

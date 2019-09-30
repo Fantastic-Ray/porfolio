@@ -15,7 +15,15 @@
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
+@keyframes bounce-5 {
+  50% {
+    transform: rotateY(10deg);
+  }
 
+  100% {
+    transform: rotateY(0deg);
+  }
+}
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
@@ -32,9 +40,9 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-image: url("./images/UCSD.jpg");
+  background-image: url("./images/UCSD.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 /* Style the back side */

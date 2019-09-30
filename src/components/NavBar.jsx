@@ -6,13 +6,16 @@ export default class NavBar extends Component {
     return (
       <ul
         className="nav fixed-top"
-        style={{ margin: "10px", backgroundColor: "white", width: "350px" }}
+        style={{ margin: "10px", backgroundColor: "white", width: "600px" }}
       >
         <li className="nav-item">
           <Link to="/home">Home</Link>
         </li>
         <li className="nav-item">
           <Link to="/project">Projects</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/smallcomponent">Small Components</Link>
         </li>
         <li className="nav-item">
           <Link to="/about">About Me</Link>

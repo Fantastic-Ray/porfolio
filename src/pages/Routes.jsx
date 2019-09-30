@@ -1,17 +1,12 @@
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import Projects from "./Projects";
 import NavBar from "../components/NavBar";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "../Routes.css";
 import Footer from "../components/Footer";
+import SmallComponents from "./smallComponents";
 export default class Routes extends Component {
   render() {
     return (
@@ -33,6 +28,7 @@ export default class Routes extends Component {
                   <Switch location={location}>
                     <Route exact path="/home" component={Home} />
                     <Route path="/project" component={Projects} />
+                    <Route path="/smallcomponent" component={SmallComponents} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

@@ -59,6 +59,9 @@ function levelConvert(level) {
     case "100":
       result = "God";
       break;
+    default:
+      result = "Beginner";
+      break;
   }
   //console.log("convert ", result);
   return result;

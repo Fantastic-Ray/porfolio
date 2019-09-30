@@ -53,20 +53,20 @@ export default class SkillBar extends Component {
   validateSkill(skillName) {
     //console.log("skillName", skillName);
     let obj = this.state.skillSet.find(
-      obj => obj.name.toUpperCase() == skillName.toUpperCase()
+      obj => obj.name.toUpperCase() === skillName.toUpperCase()
     );
     //console.log("obj", obj);
     return obj;
   }
   addSkill = () => {
-    if (this.state.newSkillName != "") {
+    if (this.state.newSkillName !== "") {
       this.state.skillSet.push({
         name: this.state.newSkillName,
         level: this.state.newSkillLevel
       });
-      this.state.inputValue = "";
-      this.state.newSkillName = "";
-      this.setState({});
+      //this.state.inputValue = "";
+      //this.state.newSkillName = "";
+      this.setState({ inputValue: "", newSkillName: "" });
     }
   };
   render() {

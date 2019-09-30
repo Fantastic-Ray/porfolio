@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 export default class ProjectCard extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div style={{ textAlign: "center", marginTop: "50px" }}>
@@ -16,15 +13,24 @@ export default class ProjectCard extends Component {
           <img
             className="card-img-top"
             src={this.props.projectImage}
-            alt="Card image cap"
+            alt="project"
           />
           <div className="card-body">
-            <h5 className="card-title" />
             <p className="card-text">{this.props.projectText}</p>
-            <a href={this.props.webLink} className="card-link" target="_blank">
+            <a
+              href={this.props.webLink}
+              className="card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Website link
             </a>
-            <a href={this.props.gitLink} className="card-link" target="_blank">
+            <a
+              href={this.props.gitLink}
+              className="card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Github link
             </a>
           </div>
